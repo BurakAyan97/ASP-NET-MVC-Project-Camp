@@ -51,11 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\IAbout.cs" />
+    <Compile Include="Abstract\IAboutDal.cs" />
     <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
-    <Compile Include="Abstract\IHeading.cs" />
+    <Compile Include="Abstract\IHeadingDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
@@ -68,6 +68,34 @@
     <Compile Include="EntityFramework\EfContentDal.cs" />
     <Compile Include="EntityFramework\EfHeadingDal.cs" />
     <Compile Include="EntityFramework\EfWriterDal.cs" />
+    <Compile Include="Migrations\202303211940517_Init2.cs" />
+    <Compile Include="Migrations\202303211940517_Init2.designer.cs">
+      <DependentUpon>202303211940517_Init2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303212015362_Init3.cs" />
+    <Compile Include="Migrations\202303212015362_Init3.designer.cs">
+      <DependentUpon>202303212015362_Init3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303221530204_Init31.cs" />
+    <Compile Include="Migrations\202303221530204_Init31.designer.cs">
+      <DependentUpon>202303221530204_Init31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303221536465_Init4.cs" />
+    <Compile Include="Migrations\202303221536465_Init4.designer.cs">
+      <DependentUpon>202303221536465_Init4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303221733325_Inıt5.cs" />
+    <Compile Include="Migrations\202303221733325_Inıt5.designer.cs">
+      <DependentUpon>202303221733325_Inıt5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303221735367_Inıt6.cs" />
+    <Compile Include="Migrations\202303221735367_Inıt6.designer.cs">
+      <DependentUpon>202303221735367_Inıt6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303221915014_Inıt7.cs" />
+    <Compile Include="Migrations\202303221915014_Inıt7.designer.cs">
+      <DependentUpon>202303221915014_Inıt7.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -81,7 +109,29 @@
       <Name>EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202303211940517_Init2.resx">
+      <DependentUpon>202303211940517_Init2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303212015362_Init3.resx">
+      <DependentUpon>202303212015362_Init3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303221530204_Init31.resx">
+      <DependentUpon>202303221530204_Init31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303221536465_Init4.resx">
+      <DependentUpon>202303221536465_Init4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303221733325_Inıt5.resx">
+      <DependentUpon>202303221733325_Inıt5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303221735367_Inıt6.resx">
+      <DependentUpon>202303221735367_Inıt6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303221915014_Inıt7.resx">
+      <DependentUpon>202303221915014_Inıt7.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
